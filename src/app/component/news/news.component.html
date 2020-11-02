@@ -1,0 +1,20 @@
+<p>news works!</p>
+
+<h2>{{message}}</h2>
+<ol #box>
+    <ul *ngFor="let item of data" >{{item}}</ul>
+</ol>
+<hr>
+<div class="pc">
+<h2>父子组件传之父传子</h2>
+<h3>input模块</h3>
+ <!--//也可传递父组件实例对象 例如 [parent]=this -->
+ <app-news1 [msg]='msg' [mh]="showWindows" #child></app-news1> 
+</div>
+
+<div class="pc">
+    <h2>父子组件传之子传父</h2>
+    <h3>viewchild模块</h3>
+    <p>{{cmsg}}</p>
+    <button (click)="showChild()">调用子组件的方法</button>
+</div>
