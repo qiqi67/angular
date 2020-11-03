@@ -10,6 +10,7 @@ const routes: Routes = [
   {
     path:"news",component:News1Component
   },
+  {path:"user",loadChildren:"./module/user/user.module#UserModule"}
 ];
 
 @NgModule({
