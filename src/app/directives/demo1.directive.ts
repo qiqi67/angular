@@ -6,7 +6,7 @@ import { Directive,Input,ElementRef, SimpleChanges } from '@angular/core';
 export class Demo1Directive {
   @Input() appDemo1:string;
   constructor(public el:ElementRef) { 
-    console.log(this.appDemo1+"===========") // undsfined
+    //console.log(this.appDemo1+"===========") // undsfined
 
   }
   ngOnChanges(changes: SimpleChanges): void {
