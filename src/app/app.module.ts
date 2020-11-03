@@ -11,6 +11,7 @@ import { News1Component } from './component/news1/news1.component';
 import { UserModule } from './module/user/user.module';
 import { DemoDirective } from './directives/demo.directive';
 import { Demo1Directive } from './directives/demo1.directive';
+import { SelfpipPipe } from './pip/selfpip.pipe';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { Demo1Directive } from './directives/demo1.directive';
     News1Component,
     DemoDirective,
     Demo1Directive,
+    SelfpipPipe,
   ],
 //引入自定义模块
   imports: [
