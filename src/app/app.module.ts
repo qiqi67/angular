@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ServiceService } from './componnets/service.service';
 import { NewsComponent } from './component/news/news.component';
 import { News1Component } from './component/news1/news1.component';
+//导入自定义模块
+import { UserModule } from './module/user/user.module';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { News1Component } from './component/news1/news1.component';
     NewsComponent,
     News1Component
   ],
+//引入自定义模块
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    UserModule
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]
