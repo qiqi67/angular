@@ -12,6 +12,7 @@ import { UserModule } from './module/user/user.module';
 import { DemoDirective } from './directives/demo.directive';
 import { Demo1Directive } from './directives/demo1.directive';
 import { SelfpipPipe } from './pip/selfpip.pipe';
+import { EventdDirective } from './directives/eventd.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SelfpipPipe } from './pip/selfpip.pipe';
     DemoDirective,
     Demo1Directive,
     SelfpipPipe,
+    EventdDirective,
   ],
 //引入自定义模块
   imports: [
